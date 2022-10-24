@@ -1,33 +1,36 @@
 
-export const timelineConfigOptions =   {
+export const timelineConfigOptions = {
   chart: {
-    zoomType: 'x',
-    type: 'timeline'
+    zoomType: "x",
+    type: "timeline",
   },
   xAxis: {
-    type: 'datetime',
-    visible: false
+    type: "datetime",
+    visible: false,
   },
   yAxis: {
     gridLineWidth: 1,
     title: null,
     labels: {
-      enabled: false
-    }
+      enabled: false,
+    },
   },
   legend: {
-    enabled: false
+    enabled: false,
   },
   title: {
-    text: 'Timeline of Space Exploration'
+    text: "",
   },
   subtitle: {
-    text: 'Info source: <a href="https://en.wikipedia.org/wiki/Timeline_of_space_exploration">www.wikipedia.org</a>'
+    text: "",
   },
   tooltip: {
     style: {
-      width: 300
-    }
+      width: 300,
+    },
   },
-  series: []
-}
+  credits: {
+    enabled: false,
+  },
+  series: [],
+};

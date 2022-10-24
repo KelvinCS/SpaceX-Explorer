@@ -20,21 +20,6 @@ export type TTimelineProps = {
   items: TTimelineItem[]
 }
 
-const series = [
-  {
-    dataLabels: {
-      allowOverlap: false,
-      format:
-        '<span style="color:{point.color}">● </span><span style="font-weight: bold;" > ' +
-        "{point.x:%d %b %Y}</span><br/>{point.label}",
-    },
-    marker: {
-      symbol: "circle",
-    },
-    data: [],
-  },
-];
-
 export const Timeline = ({items}: TTimelineProps) => {
 
   const timelineOptions = useMemo(() => {
@@ -44,6 +29,7 @@ export const Timeline = ({items}: TTimelineProps) => {
         {
           dataLabels: {
             allowOverlap: false,
+            backgroundColor: 'white',
             format:
               '<span style="color:{point.color}">● </span><span style="font-weight: bold;" > ' +
               "{point.x:%d %b %Y}</span><br/>{point.label}",
@@ -60,17 +46,6 @@ export const Timeline = ({items}: TTimelineProps) => {
     };
   }, [items])
 
-  useEffect(() => {
-    console.log(timelineOptions)
-  }, [timelineOptions])
-
-  return (
-    <div>
-      <HighchartsReact 
-        highcharts={Highcharts} 
-        options={timelineOptions} 
-      />
-    </div>
-  );
+  return <HighchartsReact highcharts={Highcharts} options={timelineOptions} />;
 
 }
