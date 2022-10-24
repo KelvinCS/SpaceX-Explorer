@@ -31,3 +31,10 @@ If you have yarn, or:
 npm run dev
 ```
 if you just have npm
+
+## Demo video
+
+Also, you can watch the demo video:
+
+[Demo video](https://www.loom.com/share/1f3f259e2150457ea79e9889db8b8dca)
+
