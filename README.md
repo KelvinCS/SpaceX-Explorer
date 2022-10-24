@@ -30,7 +30,7 @@ If you have yarn, or:
 ```bash
 npm run dev
 ```
-if you just have npm
+If you just have npm
 
 ## Demo video
 
