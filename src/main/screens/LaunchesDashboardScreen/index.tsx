@@ -39,30 +39,6 @@ export const LaunchesDashboardScreen = () => {
             </LaunchTimelineProvider>
           </div>
         </div>
-        {/* <div className="bg-background-slate flex flex-col gap-12 rounded-tl-[40px] pt-28 px-20">
-          <div className="flex flex-col gap-4">
-            <div className="flex gap-8 items-start">
-              <h1 className="font-bold text-4xl text-black">SpaceX Launches</h1>
-              <div className="w-[300px]">
-                <LaunchpadSelector />
-              </div>
-            </div>
-            <h3 className="text-gray-500 text-md font-medium">
-              <LaunchpadContext.Consumer>
-                {({ selectedLaunchpadOption }) =>
-                  selectedLaunchpadOption?.label || "Launchpads world wide"
-                }
-              </LaunchpadContext.Consumer>
-            </h3>
-          </div>
-          <MetricCardsContainer />
-          <div className="grid w-full gap-6 grid-cols-[350px,1fr]">
-            <MapSelectLaunchpads />
-            <LaunchTimelineProvider>
-              <LaunchTimeline />
-            </LaunchTimelineProvider>
-          </div>
-        </div> */}
       </div>
     </LaunchpadProvider>
   );
