@@ -1,8 +1,9 @@
+
 import React, { useContext, useMemo } from 'react'
-import { TLaunchpad } from '../../../domain/entities/launchpad'
-import { MapSelectLocation } from '../../components/MapSelectLocaiton'
-import { TMapSelectLocationPoint } from '../../components/MapSelectLocaiton/config'
-import { LaunchpadContext } from '../../context-api/LaunchpadProvider'
+import { TLaunchpad } from '../../domain/entities/launchpad'
+import { MapSelectLocation } from '../components/MapSelectLocaiton'
+import { TMapSelectLocationPoint } from '../components/MapSelectLocaiton/config'
+import { LaunchpadContext } from '../context-api/LaunchpadProvider'
 
 const generateTooltipDescription = (launchpad: TLaunchpad) => {
   return `
@@ -35,7 +36,7 @@ export const MapSelectLaunchpads = () => {
         <h2 className="text-gray-600 font-bold lg:text-lg">Launchpads</h2>
       </div>
       <div className="pt-3">
-        <MapSelectLocation 
+        <MapSelectLocation
           points={mapPoints} 
           onSelect={({ id, keyword }) => setSelectedLaunchpadOption({ value: id, label: keyword })}
         />
